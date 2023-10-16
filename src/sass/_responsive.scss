@@ -1,0 +1,34 @@
+@mixin width {
+  width: 100%;
+}
+
+@media(max-width: 1200px) {
+  section .card {
+    width: 80%;
+  }
+}
+
+@media(max-width: 512px) {
+  section .card {
+    width: 90%;
+
+    .card-image {
+      width: 100%;
+      height: 20rem;
+      img {
+        width: 86%;
+        right: 2rem;
+        top: 10rem;
+      }
+    }
+
+    .card-content {
+      @include width;
+    }
+  }
+
+  .btn {
+    @include width;
+    margin-top: 2rem;
+  }
+}

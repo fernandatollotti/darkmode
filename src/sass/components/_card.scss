@@ -1,0 +1,66 @@
+section {
+  display: flex;
+  justify-content: center;
+
+  .card {
+    margin: 4rem 0;
+    display: flex;
+    flex-wrap: wrap;
+    width: 60%;
+    background: $light;
+    box-shadow: 5px 5px 5px 0 rgba(0, 0, 0, 0.3);
+
+    .card-image,
+    .card-content {
+      padding: 2rem;
+      width: 50%;
+    }
+
+    .card-image {
+      position: relative;
+      background: $bgImg;
+      span {
+        font-size: 6rem;
+        font-weight: 900;
+      }
+    }
+
+    .card-image img {
+      width: 130%;
+      transform: rotate(-20deg);
+      position: absolute;
+      right: -1rem;
+      top: 10rem;
+    }
+
+    .card-content {
+      h2 {
+        font-size: 3rem;
+        margin-bottom: 1rem;
+      }
+
+      .subtitle {
+        color: $bgDarkSecondary;
+        text-transform: uppercase;
+        font-weight: $bold;
+        margin-bottom: 1rem;
+      }
+
+      .description {
+        line-height: 1.6;
+        margin-bottom: 2rem;
+      }
+
+      .price-container {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+
+        .price {
+          font-size: 2rem;
+          font-weight: $bold;
+        }
+      }
+    }
+  }
+}

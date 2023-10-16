@@ -1,0 +1,33 @@
+.dark {
+  background: $bgDark;
+  color: $light;
+  header {
+    @extend .dark;
+  }
+
+  .bi-sun-fill {
+    display: none;
+  }
+
+  .bi-moon-fill {
+    display: block!important;
+  }
+
+  .card {
+    .card-image {
+      background: $darkImg;
+    }
+  
+    .card-content {
+      background: $darkContent;
+  
+      .subtitle {
+        color: $blue;
+      }
+    }
+  }
+
+  .btn-main {
+    background: $blue;
+  }
+}

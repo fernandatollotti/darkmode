@@ -1,0 +1,23 @@
+#header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  padding: 1rem 2rem;
+  position: relative;
+
+  span {
+    font-weight: $bold;
+    font-size: 1.5rem;
+  }
+
+  input[type="checkbox"],
+  .bi-moon-fill {
+    display: none;
+  }
+
+  .bi {
+    font-size: 1.3rem;
+    cursor: pointer;
+  }
+}

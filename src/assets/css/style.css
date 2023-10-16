@@ -1,0 +1,163 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  background: #ECEFF1;
+  transition: 0.3s;
+}
+
+body {
+  font-family: "Helvetica", sans-serif;
+}
+
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+#header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  padding: 1rem 2rem;
+  position: relative;
+}
+#header span {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+#header input[type=checkbox],
+#header .bi-moon-fill {
+  display: none;
+}
+#header .bi {
+  font-size: 1.3rem;
+  cursor: pointer;
+}
+
+section {
+  display: flex;
+  justify-content: center;
+}
+section .card {
+  margin: 4rem 0;
+  display: flex;
+  flex-wrap: wrap;
+  width: 60%;
+  background: #FFF;
+  box-shadow: 5px 5px 5px 0 rgba(0, 0, 0, 0.3);
+}
+section .card .card-image,
+section .card .card-content {
+  padding: 2rem;
+  width: 50%;
+}
+section .card .card-image {
+  position: relative;
+  background: #EFF7FC;
+}
+section .card .card-image span {
+  font-size: 6rem;
+  font-weight: 900;
+}
+section .card .card-image img {
+  width: 130%;
+  transform: rotate(-20deg);
+  position: absolute;
+  right: -1rem;
+  top: 10rem;
+}
+section .card .card-content h2 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+section .card .card-content .subtitle {
+  color: #444;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+section .card .card-content .description {
+  line-height: 1.6;
+  margin-bottom: 2rem;
+}
+section .card .card-content .price-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+section .card .card-content .price-container .price {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.btn {
+  width: 7rem;
+  height: 3rem;
+  border: none;
+  border-radius: 2rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.btn-main {
+  background: #67B4F3;
+  color: #FFF;
+}
+
+.dark, .dark header {
+  background: #263238;
+  color: #FFF;
+}
+.dark .bi-sun-fill {
+  display: none;
+}
+.dark .bi-moon-fill {
+  display: block !important;
+}
+.dark .card .card-image {
+  background: #37474F;
+}
+.dark .card .card-content {
+  background: #273035;
+}
+.dark .card .card-content .subtitle {
+  color: #67B4F3;
+}
+.dark .btn-main {
+  background: #67B4F3;
+}
+
+@media (max-width: 1200px) {
+  section .card {
+    width: 80%;
+  }
+}
+@media (max-width: 512px) {
+  section .card {
+    width: 90%;
+  }
+  section .card .card-image {
+    width: 100%;
+    height: 20rem;
+  }
+  section .card .card-image img {
+    width: 86%;
+    right: 2rem;
+    top: 10rem;
+  }
+  section .card .card-content {
+    width: 100%;
+  }
+  .btn {
+    width: 100%;
+    margin-top: 2rem;
+  }
+}
